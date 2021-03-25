@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giveaway Form</title>
+  <link rel="stylesheet" href="dist/bundle.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">Monthly giveaway!!!</h1>
+    <h3 class="subtitle">Apply to our regular monthly giveaway and be one of three happy winners of one of our valuable
+      prizes!
+      <br>Enter asked info and proof of your purchase (receipt picture or pdf), and keep your fingers crossed!
+    </h3>
+    <form action="javascript:void(0)" method="" class="form">
+      <img class="gift-icon" src="./src/assets/images/gift.svg" alt="gift">
+      <div class="form__content">
+        <div class="form__section form__section--upload">
+          <div class="form__field form__field--dashed upload-window">
+            <img src="./src/assets/images/upload_icon.svg" class="upload-window__icon" alt="Upload image icon">
+            <p class="upload-window__feedback"></p>
+            <p class="upload-window__text">Drag & drop file to start transfer</p>
+            <button href="#" class="upload-window__btn">or <b>browse files</b></button>
+            <input class="upload-window__input" type="file" hidden>
+            <p class="upload-window__formats">Supported formats:<br> pdf, png, jpg</p>
+          </div>
+          <p class="form__message">*Format not supported</p>
+          <div class="form__field">
+            <label class="form__label" for="bank_account">Receipt number*</label>
+            <input class="form__input form__input--bank-account" type="text" name="bank_account" id="bank_account"
+              autocomplete="off">
+            <p class="form__message">*Required</p>
+          </div>
+        </div>
+        <div class="form__section form__section--border"></div>
+        <div class="form__section form__section--info">
+          <div class="form__field">
+            <label class="form__label" for="name">Name*</label>
+            <input class="form__input form__input--name" type="text" name="name" id="name" autocomplete="off">
+            <p class="form__message">*Required</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="lastname">Last name*</label>
+            <input class="form__input form__input--last-name" type="text" name="lastname" id="lastname"
+              autocomplete="off">
+            <p class="form__message">*Required</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="adress">Address*</label>
+            <input class="form__input form__input--address" type="text" name="adress" id="adress" autocomplete="off">
+            <p class="form__message">*Required</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="street_number">Street number*</label>
+            <input class="form__input form__input--street-number" type="text" name="street_number" id="street_number"
+              autocomplete="off">
+            <p class="form__message">*Required</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="city">City*</label>
+            <input class="form__input form__input--city" type="text" name="city" id="city" autocomplete="off">
+            <p class="form__message">*Required</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="zipcode">Zip code*</label>
+            <input class="form__input form__input--zipcode" type="text" name="zipcode" id="zipcode" autocomplete="off">
+            <p class="form__message">*Required</p>
+          </div>
+          <div class="form__field">
+            <label class="form__label form__label--select" for="country">Country*</label>
+            <button class="form__select-btn" id="form__select-btn" value=""></button>
+            <ul name="country" id="form__select" class="form__select">
+              <li class="form__select-option" value="bih" data-thumbnail="./src/assets/images/bih_flag_icon.svg">BiH
+              </li>
+              <li class="form__select-option" value="croatia"
+                data-thumbnail="./src/assets/images/croatia_flag_icon.svg">
+                Croatia</li>
+              <li class="form__select-option" value="serbia" data-thumbnail="./src/assets/images/serbia_flag_icon.svg">
+                Serbia
+              </li>
+            </ul>
+            <div class="form__field">
+              <label class="form__label" for="phone">Phone number*</label>
+              <input class="form__input form__input--phone" type="text" name="phone" id="phone" autocomplete="off">
+              <p class="form__message">*Required</p>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="email">E-mail*</label>
+              <input class="form__input form__input--email" type="email" name="email" id="email" autocomplete="off">
+              <p class="form__message">*Required</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="sendBtn" class="sendbtn" type="submit">Send</button>
+    </form>
+  </div>
+  <div class="modal">
+    <img src="" alt="" class="modal__icon">
+    <h1 class="modal__title">Placeholder</h1>
+    <h3 class="modal__subtitle">Placeholder</h3>
+    <button class="modal__btn">Placeholder</button>
+  </div>
+  <script src="dist/bundle.js"></script>
+</body>
+
+</html>
